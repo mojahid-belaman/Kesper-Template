@@ -1,7 +1,8 @@
 /* Start Variables */
 :root {
     --main-color: #00c7fc;
-    --transparent-color: rgb(15 116 143 / 70%)
+    --transparent-color: rgb(15 116 143 / 70%);
+    --shape-color: #1f2021;
 }
 /* End Variables */
 
@@ -18,7 +19,6 @@ html {
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #000;
 }
 
 ul {
@@ -51,7 +51,44 @@ ul {
     }
 }
 /* End Global Rules */
+/* Start Component */
+section {
+    padding: 100px;
+}
+.main-heading {
+    text-align: center;
+}
+.main-heading h2 {
+    font-weight: normal;
+    font-size: 38px;
+    position: relative;
+    text-transform: uppercase;
+    margin-bottom: 70px;
+}
+.main-heading h2::before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 2px;
+    left: 50%;
+    bottom: -25px;
+    transform: translateX(-50%);
+    background-color: var(--shape-color);
+}
+.main-heading h2::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid var(--shape-color);
+    bottom: -32px;
+    background-color: #FFF;
 
+}
+/* End Component */
 /* Start Header */
 header {
     position: absolute;
@@ -106,6 +143,7 @@ header nav ul {
         top: 100%;
         left: 0;
         width: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
     }
     header nav .toggle-menu:hover + ul li a {
         display: flex;
