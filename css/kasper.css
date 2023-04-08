@@ -694,3 +694,46 @@ header nav .form i {
     right: -10px;
 }
 /* End Our-skills */
+/* Start Quote */
+.quote {
+    padding-top: var(--services-padding);
+    padding-bottom: var(--services-padding);
+    background-image: url('../images/quote.jpg');
+    background-size: cover;
+    color: #FFF;
+    position: relative;
+}
+.quote::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.quote .container {
+    position: relative;
+    text-align: center;
+}
+.quote .container q {
+    font-size: 24px;
+    line-height: 1.7;
+}
+.quote .container q::before {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f10d';
+    font-weight: 600;
+    margin-right: 10px;
+}
+.quote .container q::after {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f10e';
+    font-weight: 600;
+    margin-left: 10px;
+}
+.quote .container span {
+    display: block;
+    margin-top: 20px;
+}
+/* End Quote */
