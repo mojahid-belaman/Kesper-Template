@@ -1,2 +1,2 @@
-# Kesper-Template
-Create Web Site Using Technology as HTML5 &amp; CSS3
+# Kasper - One Page Creative PSD Template
+Convert PSD to a website using technologies such as HTML5 and CSS3.
